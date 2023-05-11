@@ -15,11 +15,14 @@ public class ThingsToDoActivity extends AppCompatActivity {
         RecyclerView list = findViewById(R.id.recycler_view_things);
 
         Thing[] things = {
-                new Thing("Own a foosball business", "One of my dreams since I found out about foosball", 5),
-                new Thing("Own a foosball business", "One of my dreams since I found out about foosball", 5),
-                new Thing("Own a foosball business", "One of my dreams since I found out about foosball", 5),
-                new Thing("Own a foosball business", "One of my dreams since I found out about foosball", 5)
+                new Thing("Own a foosball business", "One of my dreams since I found out about foosball", R.drawable.icon_things_to_do),
+                new Thing("Own a foosball business", "One of my dreams since I found out about foosball", R.drawable.icon_things_to_do),
+                new Thing("Own a foosball business", "One of my dreams since I found out about foosball", R.drawable.icon_things_to_do),
+                new Thing("Own a foosball business", "One of my dreams since I found out about foosball", R.drawable.icon_things_to_do)
         };
 
+
+        ThingsAdapter adapter = new ThingsAdapter(things);
+        list.setAdapter(adapter);
     }
 }

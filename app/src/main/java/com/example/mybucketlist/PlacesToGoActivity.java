@@ -15,11 +15,14 @@ public class PlacesToGoActivity extends AppCompatActivity {
         RecyclerView list =findViewById(R.id.recycler_view_places);
 
         Place[] places ={
-                new Place("Japonia", "Un loc in care vreau sa ajung de cand am aflat despre cultura japonezilor", 5),
-                new Place("Japonia", "Un loc in care vreau sa ajung de cand am aflat despre cultura japonezilor", 5),
-                new Place("Japonia", "Un loc in care vreau sa ajung de cand am aflat despre cultura japonezilor", 5),
-                new Place("Japonia", "Un loc in care vreau sa ajung de cand am aflat despre cultura japonezilor", 5)
+                new Place("Japonia", "Un loc in care vreau sa ajung de cand am aflat despre cultura japonezilor", R.drawable.icon_places_to_go),
+                new Place("Japonia", "Un loc in care vreau sa ajung de cand am aflat despre cultura japonezilor", R.drawable.icon_places_to_go),
+                new Place("Japonia", "Un loc in care vreau sa ajung de cand am aflat despre cultura japonezilor", R.drawable.icon_places_to_go),
+                new Place("Japonia", "Un loc in care vreau sa ajung de cand am aflat despre cultura japonezilor", R.drawable.icon_places_to_go)
         };
+
+        PlacesAdapter adapter = new PlacesAdapter(places);
+        list.setAdapter(adapter);
 
     }
 }
