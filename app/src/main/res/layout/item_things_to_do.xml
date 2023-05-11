@@ -47,6 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/text_view_thing_name"
             android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
             android:layout_toEndOf="@id/card_view_thing_icon_container"
             android:fontFamily="sans-serif-light"
             tools:text="Description"
