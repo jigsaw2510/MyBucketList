@@ -13,7 +13,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setupClickListeners();
+    }
 
+    private void setupClickListeners() {
         CardView cardViewThingsToDo = findViewById(R.id.card_view_things_to_do);
         CardView cardViewPlacesToGo = findViewById(R.id.card_view_places_to_go);
 
@@ -32,7 +35,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(placesToGoIntent);
             }
         });
-
-
     }
 }
